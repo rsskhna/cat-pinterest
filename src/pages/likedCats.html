@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Любимые котики</title>
+    <link href="likedCats.css" rel="stylesheet">
+</head>
+<body class="page">
+    <header class="header">
+        <nav class="header__navigation">
+            <ul class="header__buttons">
+                <li class="header__button header__button_type_all-cats">
+                    <a class="header__link" href="index.html">
+                        Все котики
+                    </a>
+                </li>
+
+                <li class="header__button header__button_active header__button_type_liked-cats">
+                    <a class="header__link" href="likedCats.html">
+                        Любимые котики
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="cats">
+            <ul class="cats__list">
+            </ul>
+        </section>
+    </main>
+
+    <template id="card-template">
+        <li class="cats__item card">
+            <img class="card__image" src="" alt="Котик">
+
+            <button class="card__like card__like_clicked" type="button"></button>
+        </li>
+    </template>
+
+    <script defer src="../scripts/likedCats.js"></script>
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
